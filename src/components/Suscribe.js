@@ -6,11 +6,16 @@ const Suscribe = () => {
   const [isActive, setActive] = useState(false)
   // const [isFocus, setFocus] = useState(false)
 
-  useEffect(() => {
-    !isActive
-      ? (document.querySelector('button').style.visibility = 'hidden')
-      : (document.querySelector('button').style.visibility = 'visible')
-  }, [isActive])
+  // useEffect(() => {
+  //   !isActive
+  //     ? (document.querySelector('button').style.visibility = 'hidden')
+  //     : (document.querySelector('button').style.visibility = 'visible')
+  // }, [isActive])
+
+  // function check(e) {
+  //   const input = document.querySelector('input')
+
+  // }
 
   return (
     <div className="suscribe">
@@ -20,12 +25,7 @@ const Suscribe = () => {
         to our newsletter:
       </p>
       <form>
-        <input
-          type="text"
-          placeholder="Enter your name..."
-          onMouseLeave={() => (!isActive ? setActive(true) : setActive(false))}
-          onClick={() => (!isActive ? setActive(true) : setActive(false))}
-        />
+        <input type="text" placeholder="Enter your name..." />
         <button type="submit">Submit</button>
       </form>
     </div>
