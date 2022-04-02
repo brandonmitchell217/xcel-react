@@ -36,11 +36,32 @@
   font-weight: 700;
 }
 
-.suscribe input {
+.suscribe form {
+  width: 100%;
+  position: relative;
+}
+
+.suscribe form input {
   width: 100%;
   margin-top: 5px;
-  padding: 0.25em 0.5em;
+  padding: 1em 0.5em;
   border-radius: 4px;
   border: none;
+}
+
+.suscribe form button {
+  position: absolute;
+  right: 0;
+  top: 4.51px;
+  height: 91.75%;
+  padding: 0 3em;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0a2e36;
+  border: none;
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  background-color: #26c426;
+  visibility: hidden;
 }
 /*# sourceMappingURL=Suscribe.css.map */
