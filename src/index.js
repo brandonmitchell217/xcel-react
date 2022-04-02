@@ -9,7 +9,7 @@ ReactDOM.render(
   <React.StrictMode>
     <Navigation />
     <App />
-    {/* <Footer /> */}
+    <Footer />
   </React.StrictMode>,
   document.getElementById('root')
 )
