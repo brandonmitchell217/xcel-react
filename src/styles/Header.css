@@ -33,6 +33,7 @@ header p {
 }
 
 header .ctas {
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -51,7 +52,7 @@ header .ctas {
 header .ctas .cta {
   margin: 5px 0;
   padding: 0.33em 0;
-  max-width: 300px;
+  max-width: 240px;
   width: 90%;
   border-radius: 30px;
   border: 2px solid transparent;
@@ -78,12 +79,27 @@ header img {
     -webkit-box-direction: reverse;
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse;
+    margin-bottom: 3em;
+  }
+  header h1 {
+    max-width: 20ch;
+    margin: 0 auto;
+  }
+  header p {
+    max-width: 26vw;
+    margin: 0 auto;
   }
   header .ctas {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .ctas .cta {
+    margin: 0 5px;
   }
 }
 /*# sourceMappingURL=Header.css.map */
