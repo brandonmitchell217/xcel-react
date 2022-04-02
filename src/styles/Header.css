@@ -1,5 +1,5 @@
 header {
-  padding: 1em 0.5em 0;
+  padding: 1em calc(8vw - 15px) 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -27,7 +27,7 @@ header h1 span {
 }
 
 header p {
-  margin: 8px 0;
+  padding: 8px 0;
   text-align: center;
   font-size: 13px;
 }
@@ -48,7 +48,7 @@ header .ctas {
           align-items: center;
 }
 
-header .cta {
+header .ctas .cta {
   margin: 5px 0;
   padding: 0.33em 0;
   width: 90%;
@@ -61,7 +61,7 @@ header .cta {
   text-align: center;
 }
 
-header .cta:last-of-type {
+header .ctas .cta:last-of-type {
   background-color: transparent;
   color: #ffffff;
   border-color: #ffffff;
