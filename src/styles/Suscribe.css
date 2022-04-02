@@ -34,6 +34,7 @@
   margin: 0 0 -5px;
   font-size: 22px;
   font-weight: 700;
+  color: #ffc53a;
 }
 
 .suscribe form {
@@ -42,6 +43,7 @@
 }
 
 .suscribe form input {
+  position: relative;
   width: 100%;
   margin-top: 5px;
   padding: 1em 0.5em;
@@ -62,6 +64,5 @@
   border-top-right-radius: 4px;
   border-bottom-right-radius: 4px;
   background-color: #26c426;
-  visibility: hidden;
 }
 /*# sourceMappingURL=Suscribe.css.map */

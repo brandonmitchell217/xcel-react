@@ -4,6 +4,7 @@ import Border from '../assets/images/boxCorner.png'
 
 const Suscribe = () => {
   const [isActive, setActive] = useState(false)
+  // const [isFocus, setFocus] = useState(false)
 
   useEffect(() => {
     !isActive
@@ -11,14 +12,9 @@ const Suscribe = () => {
       : (document.querySelector('button').style.visibility = 'visible')
   }, [isActive])
 
-  function thing() {
-    !isActive ? setActive(true) : setActive(false)
-    console.log(isActive)
-  }
-
   return (
     <div className="suscribe">
-      <img src={Border} alt="" />
+      <img src={Border} alt="Green border graphic" />
       <p>
         <span>Suscribe</span>
         to our newsletter:
@@ -27,8 +23,8 @@ const Suscribe = () => {
         <input
           type="text"
           placeholder="Enter your name..."
-          onMouseEnter={() => thing()}
-          onMouseLeave={() => thing()}
+          onMouseLeave={() => (!isActive ? setActive(true) : setActive(false))}
+          onClick={() => (!isActive ? setActive(true) : setActive(false))}
         />
         <button type="submit">Submit</button>
       </form>
