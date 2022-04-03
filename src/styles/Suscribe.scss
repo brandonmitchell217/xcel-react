@@ -135,4 +135,15 @@ $yellow: #ffc53a;
       }
     }
   }
+  @media (min-width: 1800px) {
+    p {
+      font-size: 24px;
+      span {
+        font-size: 28px;
+      }
+    }
+    img {
+      width: 106px;
+    }
+  }
 }

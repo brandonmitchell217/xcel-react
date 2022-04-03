@@ -1,13 +1,19 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import '../styles/Navigation.css'
 import Logo from '../assets/images/logo.png'
 import { FaBars } from 'react-icons/fa'
 
 const Navigation = () => {
+  const [open, setopen] = useState(false)
+  const navList = document.querySelector('ul')
+  !open
+    ? (navList.style.transform = 'translateY(100%)')
+    : (navList.style.transform = 'translateY(0)')
+
   return (
     <nav>
       <img src={Logo} alt="X-cel logo" />
-      <div className="burger">
+      <div className="burger" onClick={() => setopen(!open)}>
         <FaBars />
       </div>
       <ul>

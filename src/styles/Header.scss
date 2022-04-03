@@ -100,12 +100,33 @@ header {
       font-size: 19px;
     }
     .ctas {
+      justify-content: space-evenly;
       .cta {
         font-size: 22px;
       }
     }
     img {
-      max-width: 500px;
+      display: block;
+      max-width: 100%;
+    }
+  }
+  @media (min-width: 1800px) {
+    width: 100%;
+    .rightTop,
+    .leftBottom {
+      width: 50%;
+    }
+    h1 {
+      font-size: 68px;
+    }
+    p {
+      font-size: 22px;
+    }
+    .ctas {
+      .cta {
+        max-width: 300px;
+        font-size: 30px;
+      }
     }
   }
 }

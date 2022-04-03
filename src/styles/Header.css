@@ -131,11 +131,37 @@ header img {
     max-width: 550px;
     font-size: 19px;
   }
+  header .ctas {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
   header .ctas .cta {
     font-size: 22px;
   }
   header img {
-    max-width: 500px;
+    display: block;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 1800px) {
+  header {
+    width: 100%;
+  }
+  header .rightTop,
+  header .leftBottom {
+    width: 50%;
+  }
+  header h1 {
+    font-size: 68px;
+  }
+  header p {
+    font-size: 22px;
+  }
+  header .ctas .cta {
+    max-width: 300px;
+    font-size: 30px;
   }
 }
 /*# sourceMappingURL=Header.css.map */

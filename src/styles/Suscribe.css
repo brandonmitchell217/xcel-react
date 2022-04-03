@@ -143,4 +143,16 @@
     font-size: 19px;
   }
 }
+
+@media (min-width: 1800px) {
+  .suscribe p {
+    font-size: 24px;
+  }
+  .suscribe p span {
+    font-size: 28px;
+  }
+  .suscribe img {
+    width: 106px;
+  }
+}
 /*# sourceMappingURL=Suscribe.css.map */
