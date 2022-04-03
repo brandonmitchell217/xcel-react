@@ -1,6 +1,5 @@
 $white: #ffffff;
 footer {
-  max-width: 1441px;
   width: 100%;
   padding: 1em 0 0.5em;
   display: flex;
@@ -58,5 +57,7 @@ footer {
     span {
       font-size: 18px;
     }
+  }
+  @media (min-width: 1800px) {
   }
 }

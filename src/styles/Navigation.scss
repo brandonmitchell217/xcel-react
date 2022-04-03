@@ -3,6 +3,8 @@ $red: #95190c;
 $green: #26c426;
 $white: #ffffff;
 $yellow: #ffc53a;
+$transform1: scale(1.04);
+$transition1: all 250ms ease;
 nav {
   position: absolute;
   top: 0;
@@ -15,6 +17,10 @@ nav {
 
   img {
     height: 40px;
+    transition: $transition1;
+    &:hover {
+      transform: $transform1;
+    }
   }
 
   ul {
@@ -35,9 +41,18 @@ nav {
     a {
       color: $white;
       font-weight: 500;
+      transition: $transition1;
+      &:hover {
+        color: $green;
+      }
     }
     img {
       height: 65px;
+      margin-bottom: -4vh;
+      transition: $transition1;
+      &:hover {
+        transform: $transform1;
+      }
     }
   }
 
@@ -46,6 +61,10 @@ nav {
     z-index: 3;
     font-size: 26px;
     cursor: pointer;
+    transition: $transition1;
+    &:hover {
+      transform: $transform1;
+    }
   }
   @media (min-width: 768px) {
     ul {
