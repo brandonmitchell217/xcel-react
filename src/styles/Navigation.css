@@ -29,7 +29,7 @@ nav img:hover {
 nav ul {
   position: fixed;
   top: 0;
-  left: 0;
+  right: 0;
   z-index: 2;
   height: 100vh;
   width: 100%;
@@ -90,11 +90,15 @@ nav .burger:hover {
 }
 
 @media (min-width: 768px) {
+  nav {
+    padding: 1em 2em;
+  }
   nav ul {
     position: relative;
     max-width: 700px;
     width: 50%;
     height: auto;
+    background-color: transparent;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -105,8 +109,8 @@ nav .burger:hover {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    -webkit-transform: translateY(0);
-            transform: translateY(0);
+    -webkit-transform: translateY(0) !important;
+            transform: translateY(0) !important;
   }
   nav ul li:first-of-type {
     display: none;

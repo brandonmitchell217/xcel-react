@@ -8,9 +8,7 @@ const Suscribe = () => {
   // const [isFocus, setFocus] = useState(false)
 
   // useEffect(() => {
-  //   !isActive
-  //     ? (document.querySelector('button').style.visibility = 'hidden')
-  //     : (document.querySelector('button').style.visibility = 'visible')
+  //   !isActive ? console.log(!isActive) : console.log(isActive)
   // }, [isActive])
 
   // function check(e) {
