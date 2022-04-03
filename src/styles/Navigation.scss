@@ -35,4 +35,14 @@ nav {
     font-size: 26px;
     cursor: pointer;
   }
+  @media (min-width: 768px) {
+    .burger {
+      font-size: 30px;
+    }
+  }
+  @media (min-width: 1439px) {
+    .burger {
+      font-size: 34px;
+    }
+  }
 }

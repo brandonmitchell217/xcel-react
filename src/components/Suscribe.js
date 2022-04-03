@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import '../styles/Suscribe.css'
 import Border from '../assets/images/boxCorner.png'
+import Border1 from '../assets/images/boxCorner.png'
 
 const Suscribe = () => {
   const [isActive, setActive] = useState(false)
@@ -19,7 +20,7 @@ const Suscribe = () => {
 
   return (
     <div className="suscribe">
-      <img src={Border} alt="Green border graphic" />
+      <img src={Border} alt="Green border graphic" className="top" />
       <p>
         <span>Suscribe</span>
         to our newsletter:
@@ -28,6 +29,7 @@ const Suscribe = () => {
         <input type="text" placeholder="Enter your name..." />
         <button type="submit">Submit</button>
       </form>
+      <img src={Border1} alt="Green border graphic" className="btm" />
     </div>
   )
 }

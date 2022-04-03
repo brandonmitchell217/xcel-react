@@ -1,6 +1,7 @@
 footer {
-  padding: 1em 0 0.5em;
+  max-width: 1441px;
   width: 100%;
+  padding: 1em 0 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -30,7 +31,7 @@ footer .social {
 }
 
 footer .social a {
-  font-size: 22px;
+  font-size: 18px;
   margin: 0 8px;
   color: #ffffff;
 }
@@ -42,5 +43,41 @@ footer img {
 
 footer span {
   font-size: 15px;
+}
+
+@media (min-width: 767px) {
+  footer {
+    padding-left: 1em;
+    padding-right: 1em;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .social a {
+    font-size: 22px;
+  }
+  footer img {
+    margin: 0;
+    height: 45px;
+  }
+  footer span {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1439px) {
+  footer .social a {
+    font-size: 24px;
+  }
+  footer img {
+    height: 55px;
+  }
+  footer span {
+    font-size: 18px;
+  }
 }
 /*# sourceMappingURL=Footer.css.map */

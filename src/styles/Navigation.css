@@ -52,4 +52,16 @@ nav .burger {
   font-size: 26px;
   cursor: pointer;
 }
+
+@media (min-width: 768px) {
+  nav .burger {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1439px) {
+  nav .burger {
+    font-size: 34px;
+  }
+}
 /*# sourceMappingURL=Navigation.css.map */

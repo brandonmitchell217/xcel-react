@@ -1,7 +1,8 @@
 $white: #ffffff;
 footer {
-  padding: 1em 0 0.5em;
+  max-width: 1441px;
   width: 100%;
+  padding: 1em 0 0.5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -13,7 +14,7 @@ footer {
     justify-content: center;
     align-items: center;
     a {
-      font-size: 22px;
+      font-size: 18px;
       margin: 0 8px;
       color: $white;
     }
@@ -26,5 +27,36 @@ footer {
 
   span {
     font-size: 15px;
+  }
+  @media (min-width: 767px) {
+    padding-left: 1em;
+    padding-right: 1em;
+    flex-direction: row;
+    justify-content: space-between;
+    .social {
+      a {
+        font-size: 22px;
+      }
+    }
+    img {
+      margin: 0;
+      height: 45px;
+    }
+    span {
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 1439px) {
+    .social {
+      a {
+        font-size: 24px;
+      }
+    }
+    img {
+      height: 55px;
+    }
+    span {
+      font-size: 18px;
+    }
   }
 }
