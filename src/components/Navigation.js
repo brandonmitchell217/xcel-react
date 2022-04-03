@@ -5,10 +5,13 @@ import { FaBars } from 'react-icons/fa'
 
 const Navigation = () => {
   const [open, setopen] = useState(false)
-  const navList = document.querySelector('ul')
-  !open
-    ? (navList.style.transform = 'translateY(100%)')
-    : (navList.style.transform = 'translateY(0)')
+
+  useEffect(() => {
+    const navList = document.querySelector('ul')
+    !open
+      ? (navList.style.transform = 'translateY(100%)')
+      : (navList.style.transform = 'translateY(0)')
+  }, [open])
 
   return (
     <nav>
