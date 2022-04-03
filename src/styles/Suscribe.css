@@ -2,7 +2,7 @@
   position: relative;
   max-width: 600px;
   width: 100%;
-  margin: 0 auto;
+  margin: 1em 0 2em;
   padding: 0 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -27,14 +27,14 @@
 }
 
 .suscribe p {
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
 }
 
 .suscribe p span {
   display: block;
   margin: 0 0 -5px;
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 700;
   color: #ffc53a;
 }
@@ -59,8 +59,8 @@
   right: 0;
   top: 4.51px;
   height: 91.75%;
-  padding: 0 3em;
-  font-size: 16px;
+  padding: 0 1em;
+  font-size: 15px;
   font-weight: 600;
   color: #0a2e36;
   border: none;
@@ -71,11 +71,46 @@
   cursor: pointer;
 }
 
+@media (min-width: 425px) and (max-width: 768px) {
+  .suscribe p {
+    font-size: 15px;
+  }
+  .suscribe p span {
+    font-size: 19px;
+  }
+  .suscribe form button {
+    padding: 0 1.5em;
+  }
+}
+
 @media (min-width: 769px) {
-  .suscribe .suscribe {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+  .suscribe p {
+    font-size: 16px;
+  }
+  .suscribe p span {
+    font-size: 20px;
+  }
+  .suscribe img {
+    width: 92px;
+  }
+  .suscribe form button {
+    padding: 0 2em;
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1439px) {
+  .suscribe p {
+    font-size: 18px;
+  }
+  .suscribe p span {
+    font-size: 22px;
+  }
+  .suscribe img {
+    width: 96px;
+  }
+  .suscribe form button {
+    font-size: 19px;
   }
 }
 /*# sourceMappingURL=Suscribe.css.map */

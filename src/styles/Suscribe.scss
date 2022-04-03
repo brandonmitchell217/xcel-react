@@ -7,7 +7,7 @@ $yellow: #ffc53a;
   position: relative;
   max-width: 600px;
   width: 100%;
-  margin: 0 auto;
+  margin: 1em 0 2em;
   padding: 0 0.5em;
   display: flex;
   flex-direction: column;
@@ -22,13 +22,13 @@ $yellow: #ffc53a;
   }
 
   p {
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 400;
 
     span {
       display: block;
       margin: 0 0 -5px;
-      font-size: 22px;
+      font-size: 18px;
       font-weight: 700;
       color: $yellow;
     }
@@ -52,8 +52,8 @@ $yellow: #ffc53a;
       right: 0;
       top: 4.51px;
       height: 91.75%;
-      padding: 0 3em;
-      font-size: 16px;
+      padding: 0 1em;
+      font-size: 15px;
       font-weight: 600;
       color: $dark;
       border: none;
@@ -64,9 +64,51 @@ $yellow: #ffc53a;
       cursor: pointer;
     }
   }
+
+  @media (min-width: 425px) and (max-width: 768px) {
+    p {
+      font-size: 15px;
+      span {
+        font-size: 19px;
+      }
+    }
+    form {
+      button {
+        padding: 0 1.5em;
+      }
+    }
+  }
   @media (min-width: 769px) {
-    .suscribe {
-      align-items: center;
+    p {
+      font-size: 16px;
+      span {
+        font-size: 20px;
+      }
+    }
+    img {
+      width: 92px;
+    }
+    form {
+      button {
+        padding: 0 2em;
+        font-size: 17px;
+      }
+    }
+  }
+  @media (min-width: 1439px) {
+    p {
+      font-size: 18px;
+      span {
+        font-size: 22px;
+      }
+    }
+    img {
+      width: 96px;
+    }
+    form {
+      button {
+        font-size: 19px;
+      }
     }
   }
 }

@@ -1,5 +1,5 @@
 header {
-  padding: 1.5em calc(8vw - 15px) 0;
+  padding: 4.5em 0.5em 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -16,6 +16,9 @@ header {
 }
 
 header h1 {
+  max-width: 14ch;
+  width: 100%;
+  margin: 0 auto;
   font-size: 34px;
   font-weight: 800;
   line-height: 0.95;
@@ -23,11 +26,15 @@ header h1 {
 }
 
 header h1 span {
+  display: block;
   color: #26c426;
 }
 
 header p {
-  padding: 8px 0;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 8px 0.5em;
   text-align: center;
   font-size: 13px;
 }
@@ -58,7 +65,7 @@ header .ctas .cta {
   border: 2px solid transparent;
   background-color: #ffc53a;
   color: #0a2e36;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 700;
   text-align: center;
 }
@@ -73,6 +80,15 @@ header img {
   width: 320px;
 }
 
+@media (min-width: 425px) and (max-width: 768px) {
+  header h1 {
+    font-size: 38px;
+  }
+  header p {
+    font-size: 15px;
+  }
+}
+
 @media (min-width: 769px) {
   header {
     -webkit-box-orient: horizontal;
@@ -82,12 +98,11 @@ header img {
     margin-bottom: 3em;
   }
   header h1 {
-    max-width: 20ch;
-    margin: 0 auto;
+    font-size: 42px;
   }
   header p {
-    max-width: 26vw;
-    margin: 0 auto;
+    padding: 0.5em 0 0.75em;
+    font-size: 17px;
   }
   header .ctas {
     -webkit-box-orient: horizontal;
@@ -100,6 +115,27 @@ header img {
   }
   header .ctas .cta {
     margin: 0 5px;
+    font-size: 20px;
+  }
+  header img {
+    max-width: 450px;
+    width: 85%;
+  }
+}
+
+@media (min-width: 1439px) {
+  header h1 {
+    font-size: 52px;
+  }
+  header p {
+    max-width: 550px;
+    font-size: 19px;
+  }
+  header .ctas .cta {
+    font-size: 22px;
+  }
+  header img {
+    max-width: 500px;
   }
 }
 /*# sourceMappingURL=Header.css.map */
