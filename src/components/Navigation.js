@@ -15,7 +15,9 @@ const Navigation = () => {
 
   return (
     <nav>
-      <img src={Logo} alt="X-cel logo" />
+      <a href="/">
+        <img src={Logo} alt="X-cel logo" />
+      </a>
       <div className="burger" onClick={() => setopen(!open)}>
         <FaBars />
       </div>

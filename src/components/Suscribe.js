@@ -25,7 +25,9 @@ const Suscribe = () => {
       </p>
       <form>
         <input type="text" placeholder="Enter your name..." />
-        <button type="submit">Submit</button>
+        <button type="submit" onClick={(e) => e.preventDefault()}>
+          Submit
+        </button>
       </form>
       <img src={Border1} alt="Green border graphic" className="btm" />
     </div>
