@@ -1,20 +1,10 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import '../styles/Suscribe.css'
 import Border from '../assets/images/boxCorner.png'
 import Border1 from '../assets/images/boxCorner.png'
 
 const Suscribe = () => {
-  const [isActive, setActive] = useState(false)
-  // const [isFocus, setFocus] = useState(false)
-
-  // useEffect(() => {
-  //   !isActive ? console.log(!isActive) : console.log(isActive)
-  // }, [isActive])
-
-  // function check(e) {
-  //   const input = document.querySelector('input')
-
-  // }
+  // const [isActive, setActive] = useState(false)
 
   return (
     <div className="suscribe">
