@@ -1,3 +1,17 @@
+# Xcel Solutions
+
+![Xcel landing](xcel.jpg)
+
+## Description
+
+A landing page made using React & SCSS.
+
+### Technologies
+
+- React
+- Sass
+- Figma
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
