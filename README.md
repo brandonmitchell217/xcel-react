@@ -1,4 +1,4 @@
-# Xcel Solutions
+# X-cel Solutions
 
 ![Xcel landing](xcel.jpg)
 
