@@ -2,7 +2,7 @@
   position: relative;
   max-width: 1080px;
   width: 100%;
-  margin: 2em 0 4em;
+  margin: 2em 0;
   padding: 0 0.5em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -90,6 +90,9 @@
 }
 
 @media (min-width: 319px) and (max-width: 768px) {
+  .suscribe {
+    padding-bottom: 2em;
+  }
   .suscribe .top {
     top: -5px;
     left: -5px;

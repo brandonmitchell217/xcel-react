@@ -1,10 +1,10 @@
 $white: #ffffff;
 footer {
   width: 100%;
-  padding: 1em 0 0.5em;
+  padding: 1em 0.5em 0.5em;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   border-top: 2px solid rgba($white, $alpha: 0.5);
 
@@ -20,18 +20,16 @@ footer {
   }
 
   img {
-    height: 40px;
+    height: 30px;
     margin-bottom: 5px;
   }
 
   span {
-    font-size: 15px;
+    font-size: 12px;
   }
   @media (min-width: 767px) {
-    padding-left: 1em;
-    padding-right: 1em;
-    flex-direction: row;
-    justify-content: space-between;
+    padding: 1.5em 1em;
+
     .social {
       a {
         font-size: 22px;
@@ -57,7 +55,5 @@ footer {
     span {
       font-size: 18px;
     }
-  }
-  @media (min-width: 1800px) {
   }
 }
