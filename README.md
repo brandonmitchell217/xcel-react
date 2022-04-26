@@ -4,7 +4,7 @@
 
 ## Description
 
-A landing page made using React & SCSS.
+A landing page made using React & Sass.
 
 ### Technologies
 
